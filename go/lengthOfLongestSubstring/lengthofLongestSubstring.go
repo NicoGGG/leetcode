@@ -1,35 +1,5 @@
 package main
 
-func maxIntMap(m map[int32]int) int {
-	r := 0
-	for _, j := range m {
-		if j > r {
-			r = j
-		}
-	}
-	return r
-}
-
-func incrementMap(m map[int32]*int) {
-	for k, _ := range m {
-		*(m[k]) = *(m[k]) + 1
-	}
-}
-
-func intPtr(i int) *int {
-	return &i
-}
-
-func maxIntArray(l []int) int {
-	r := 0
-	for _, j := range l {
-		if j > r {
-			r = j
-		}
-	}
-	return r
-}
-
 func lengthOfLongestSubstring(s string) int {
 	m := make(map[int32]int)
 	tR := 0
@@ -38,7 +8,7 @@ func lengthOfLongestSubstring(s string) int {
 	for i, c := range s {
 		if j, ok := m[c]; ok {
 			// If char c is in the map, all substring starting at or before m[c] are ended
-			if j + 1 > b {
+			if j+1 > b {
 				// New beginning becomes m[c] + 1, unless we are on a char that was before b, because its streak was already ended
 				// For example, "abccadefgh" when we get to the second 'c' at index 4, beginning is now 4.
 				//  when we get to the second 'a' at index 5, beginning doesn't change because the 'a' starting string was already over
