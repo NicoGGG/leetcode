@@ -1,4 +1,4 @@
-# [lengthOfLongestSubstring go solution](https://leetcode.com/problems/longest-substring-without-repeating-characters)
+# [Length of Longest Substring go solution](https://leetcode.com/problems/longest-substring-without-repeating-characters)
   
 ## Try 1: Trying a simple map implementation
 
