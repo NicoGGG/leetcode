@@ -17,7 +17,7 @@ If map length is 1, I append the character of index i (of any string, since they
 
 ## Try 2
 
-First approached worked and I validated the challenge, over, memory consumption wasn't optimal.
+First approach worked, and I validated the challenge. However, memory consumption wasn't optimal.
 
 I realised I can save on some things.
 
