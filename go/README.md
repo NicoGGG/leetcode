@@ -7,3 +7,5 @@
 [Reverse Integer](reverseInteger)
 
 [Atoi](atoi)
+
+[Longest Common Prefix](longestCommonPrefix)
