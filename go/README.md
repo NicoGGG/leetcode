@@ -5,3 +5,5 @@
 [Length of Longest Substring](lengthOfLongestSubstring)
 
 [Reverse Integer](reverseInteger)
+
+[Atoi](atoi)
