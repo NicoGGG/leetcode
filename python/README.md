@@ -1,3 +1,4 @@
 # Python solutions
 
-[Two sum](twosum)
+- [Two sum](twosum)
+- [Median of two sorted arrays](medianTwoSortedArrays)
