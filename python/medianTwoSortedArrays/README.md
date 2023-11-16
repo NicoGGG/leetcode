@@ -28,18 +28,18 @@ nums2.length == n
 
 ## Solution
 
-`python -m unittest` to execute the tests (unittest must be installed globally or create a virtualenv for the exercice)
+`python -m unittest` to execute the tests (unittest must be installed globally or create a virtualenv for the exercise)
 
 ### O((n+m)log(n+m))
 
-Merge the two array, sort the resulting array, and then get the median value: array[l//2 + 1] if l is odd, (array[l//2 - 1] + array[l//2])/2 if l is even.
+Merge the two arrays, sort the resulting array, and then get the median value: array[l//2 + 1] if l is odd, (array[l//2 - 1] + array[l//2])/2 if l is even.
 
 This is working but it is not O(log(n+m)) because we do not take advantage of the fact that both array are already sorted here, wasting time and memory redoing a sort after the merge.
 
 ### O(log(m+n))
 
-Traverse both array simultaneously and pop the highest value. At the end of one array, traverse the other and pop everything. The merged_array is reversed here, but since we are looking for the median value, it doesn't matter
+Traverse both arrays simultaneously and pop the highest value. At the end of one array, traverse the other and pop everything. The merged_array is reversed here, but since we are looking for the median value, it doesn't matter
 
 ### Optimal
 
-To avoid doing arithmetic operation that can be costly, the two pointer method approach is used in the findMedianSortedArrays2 method.
+To avoid doing arithmetic operations that can be costly, the two pointers method approach is used in the findMedianSortedArrays2 method.
