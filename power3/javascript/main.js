@@ -27,7 +27,7 @@ console.log(isPowerOfThree1(n3))
   * @returns {boolean}
   */
 function isPowerOfThree2(n) {
-  
+  return n > 0 && 3**19 % n === 0
 }
 
 console.log(isPowerOfThree2(n1))
